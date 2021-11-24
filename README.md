@@ -1,5 +1,5 @@
 # App name - EXPLORE_WORLD
-site link - https://compassionate-wozniak-c6cb2c.netlify.app
+
 
 ## Technologies
 - React
