@@ -7,7 +7,7 @@ const ExploreCars = () => {
     const [allItems,setAllItems] = useState([])
 
     useEffect(()=>{
-        fetch('http://localhost:7000/cards')
+        fetch('https://shrouded-wildwood-42642.herokuapp.com/cards')
         .then(res => res.json())
         .then(data => setAllItems(data))
     },[])

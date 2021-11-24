@@ -9,7 +9,7 @@ const MyOrder = () => {
     const [myOrder,setMyOrder] = useState([])
 
     useEffect(()=>{
-        fetch('http://localhost:7000/users')
+        fetch('https://shrouded-wildwood-42642.herokuapp.com/users')
         .then(res => res.json())
         .then(data => {
             const onlyMine = data.filter(mine => mine.email === mail)
@@ -23,7 +23,7 @@ const MyOrder = () => {
     const deleteBtn = id => {
         const confirm = window.confirm('Are you sure wanna remove this?')
         if (confirm) {
-            fetch(`http://localhost:7000/users/${id}`,{
+            fetch(`https://shrouded-wildwood-42642.herokuapp.com/users/${id}`,{
             method:'DELETE'
         })
         .then(res => res.json())

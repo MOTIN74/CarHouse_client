@@ -34,7 +34,7 @@ const AddProducts = () => {
 
 
     const formBtn = e => {
-        fetch('http://localhost:7000/cards',{
+        fetch('https://shrouded-wildwood-42642.herokuapp.com/cards',{
             method:'POST',
             headers:{'content-type':'application/json'},
             body:JSON.stringify(AddCars)

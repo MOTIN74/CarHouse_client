@@ -12,13 +12,13 @@ const Admin = () => {
     const [approve,setApprove] = useState(false)
 
     useEffect(()=>{
-        fetch('http://localhost:7000/users')
+        fetch('https://shrouded-wildwood-42642.herokuapp.com/users')
         .then(res => res.json())
         .then(data => setAll(data))
     },[approve])
 
     useEffect(()=>{
-        fetch('http://localhost:7000/cards')
+        fetch('https://shrouded-wildwood-42642.herokuapp.com/cards')
         .then(res => res.json())
         .then(data => setAllEvent(data))
     },[])
@@ -27,7 +27,7 @@ const Admin = () => {
     const deleteBtn = id => {
         const confirm = window.confirm('Are you sure wanna remove this?')
         if (confirm) {
-            fetch(`http://localhost:7000/users/${id}`,{
+            fetch(`https://shrouded-wildwood-42642.herokuapp.com/users/${id}`,{
                 method:'DELETE'
             })
             .then(res => res.json())
@@ -46,7 +46,7 @@ const Admin = () => {
     const deleteEvent = id => {
         const confirm = window.confirm('Are you sure wanna remove this?')
         if (confirm) {
-            fetch(`http://localhost:7000/cards/${id}`,{
+            fetch(`https://shrouded-wildwood-42642.herokuapp.com/cards/${id}`,{
             method:'DELETE'
         })
         .then(res => res.json())
@@ -66,7 +66,7 @@ const Admin = () => {
     }
 
     const updateBtn = id => {
-        fetch(`http://localhost:7000/users/${id}`,{
+        fetch(`https://shrouded-wildwood-42642.herokuapp.com/users/${id}`,{
             method:'PUT',
             headers:{'content-type':'application/json'},
             body:JSON.stringify(update)

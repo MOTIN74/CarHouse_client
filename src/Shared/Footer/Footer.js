@@ -39,7 +39,7 @@ const Footer = () => {
         <div className=" py-2">
             <Container>
                 <div>
-                    <p className="text-center p-0 m-0 text-dark">Allrights reserved || &copy;2021-2050</p>
+                    <p className="text-center p-0 m-0 text-dark">Allrights reserved CAR_HOUSE || &copy;2021-2050</p>
                 </div>
             </Container>
         </div>

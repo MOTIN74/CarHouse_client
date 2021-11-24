@@ -91,7 +91,7 @@ const useFirebase = () => {
    
 
     useEffect( () => { 
-        fetch(`http://localhost:7000/users/${user.email}`)
+        fetch(`https://shrouded-wildwood-42642.herokuapp.com/users/${user.email}`)
         .then(res => res.json())
         .then(data => setAdministrator(data.administrator))
     },[user.email])
@@ -113,7 +113,7 @@ const useFirebase = () => {
       }
       const saveUser = (email, displayName, method) => {
         const user = {email, displayName};
-        fetch('http://localhost:7000/users', {
+        fetch('https://shrouded-wildwood-42642.herokuapp.com/users', {
             method: method,
             headers: {
                 'content-type': 'application/json'

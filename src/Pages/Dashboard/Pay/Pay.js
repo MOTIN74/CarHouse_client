@@ -9,7 +9,7 @@ const Pay = () => {
     const [method,setMethod] = useState('')
 
     useEffect(()=> {
-        fetch(`http://localhost:7000/orders/${user?.email}`)
+        fetch(`https://shrouded-wildwood-42642.herokuapp.com/orders/${user?.email}`)
         .then(res => res.json())
         .then(data => setAllMyOrders(data))
     },[user?.email])

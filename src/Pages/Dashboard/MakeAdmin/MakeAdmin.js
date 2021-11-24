@@ -12,7 +12,7 @@ const MakeAdmin = () => {
 
      const handleAdminSubmit = e => {
         const user = { email };
-         fetch('http://localhost:7000/users/', {
+         fetch('https://shrouded-wildwood-42642.herokuapp.com/users/', {
              method: 'PUT',
             headers: {
                 'content-type': 'application/json'

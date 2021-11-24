@@ -12,7 +12,7 @@ const Selected = () => {
     const [info,setInfo] = useState({})
 
     useEffect(()=>{
-        fetch('http://localhost:7000/cards')
+        fetch('https://shrouded-wildwood-42642.herokuapp.com/cards')
         .then(res => res.json())
         .then(data => {
             const selectedItm = data.find(item => item._id === id)
@@ -38,7 +38,7 @@ const Selected = () => {
 
         setInfo(newInfo)
         
-            fetch('http://localhost:7000/users',{
+            fetch('https://shrouded-wildwood-42642.herokuapp.com/users',{
                 method:'POST',
                 headers:{'content-type':'application/json'},
                 body:JSON.stringify(info)
