@@ -11,9 +11,9 @@
 - Dotenv
 
 ### `Features`
-- Tour overworld
-- Easy booking
-- Tour with friends
+- Car overworld
+- Easy purchashing
+- journey with cars
 - Low cost
 - Feedback
 - ETC...
