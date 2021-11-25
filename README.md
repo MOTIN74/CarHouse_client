@@ -1,4 +1,4 @@
-# App name - EXPLORE_WORLD
+# App name - CarHouse
 
 
 ## Technologies
@@ -28,4 +28,4 @@
 
 
 
-# HAPPY DAY - EXPLORE_WORLD
+# HAPPY Journey - EXPLORE_CARS
